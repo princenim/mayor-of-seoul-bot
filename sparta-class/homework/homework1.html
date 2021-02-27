@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>homework</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<style>
+		.picture{
+			
+			background-image:url(https://assets.readitforward.com/wp-content/uploads/2019/11/Nov19-1600x1200-830x625.jpg);
+			background-repeat: no-repeat;
+			background-position:center;	
+			margin: 50px auto 0 auto;
+			width: 850px;
+			height:400px;
+		}
+		.text-size{font-size: 30px;
+		}
+		
+		.secondpart{
+			margin: 50px auto 0 auto;
+			width: 850px;
+
+		}
+		.lastpart{
+			
+			margin: 50px auto 0 auto;
+			width: 850px;
+		}
+		.btn-primary{
+			margin-top: 50px;
+			margin-left: 555px;
+
+		}
+		*{
+			font-family: 'Noto Sans KR', sans-serif; 
+		}
+
+	</style>
+	<script type="text/javascript">
+		let num = 0;
+		function hey(){
+			num += 1;
+			if (num < 3) {
+				alert("안녕! " + num +"번 누르셨네요!");
+			} else {
+				alert('앗. 그만 누르세요 이제!');
+			}
+		}
+	</script>
+</head>
+
+
+<body>
+
+	<div class="picture"></div>
+	<div class="secondpart">
+		<span class="text-size"> 책 판매합니다. </span>
+		<span> 가격:천원/권 당</span> 
+		<p> 종류 : 소설, 시 , 희곡 , 에세이 ,여행 , 만화, 인문학, 사회과학, 역사 ,예술, 대중문화, 자기계발, 외국어, 경영경제, 컴퓨터</p>
+	</div>
+	<div class="lastpart">
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-default">주문자이름</span>
+			</div>
+			<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+		</div>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<label class="input-group-text" for="inputGroupSelect01">수량</label>
+			</div>
+			<select class="custom-select" id="inputGroupSelect01">
+				<option selected>수량을 선택하세요</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+		</div>
+		
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-default">주소</span>
+			</div>
+			<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+		</div>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+			</div>
+			<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+		</div>
+	</div>
+	<button type="button" class="btn btn-primary" onclick="hey()">Primary</button>
+</body>
+</html>

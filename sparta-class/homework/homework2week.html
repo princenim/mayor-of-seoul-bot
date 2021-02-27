@@ -1,0 +1,265 @@
+
+</html><!doctype html>
+
+<html lang="en">
+
+<head>
+
+	​
+
+	<!-- Webpage Title -->
+
+	<title>homework</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- Required meta tags -->
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	
+	<!-- Bootstrap CSS -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	
+	<!-- JS --> 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+
+	​
+
+	​
+
+	​
+
+	​
+
+	<style>
+
+		.picture{
+
+			​
+
+			background-image:url(https://assets.readitforward.com/wp-content/uploads/2019/11/Nov19-1600x1200-830x625.jpg);
+
+			background-repeat: no-repeat;
+
+			background-position:center; 
+
+			margin: 50px auto 0 auto;
+
+			width: 850px;
+
+			height:400px;
+
+		}
+
+		.text-size{font-size: 30px;
+
+		}
+
+		​
+
+		.secondpart{
+
+			margin: 50px auto 0 auto;
+
+			width: 850px;
+
+			​
+
+		}
+
+		.lastpart{
+
+			​
+
+			margin: 50px auto 0 auto;
+
+			width: 850px;
+
+		}
+
+		.btn-primary{
+
+			margin-top: 50px;
+
+			margin-left: 700px;
+
+			​
+
+		}
+
+		*{
+
+			font-family: 'Noto Sans KR', sans-serif; 
+
+		}
+
+		​
+
+	</style>
+
+	<script>
+
+		function hey(){
+
+			var inputname = $('#inputname').val();
+
+			var inputcount = $('#inputcount').val();
+
+			var inputaddress = $('#inputadress').val();
+
+			var inputnumber = $('#inputnumber').val();
+
+			​
+
+			if(inputname == ''){
+
+				alert('이름을 입력하세요')
+
+				$('#inputname').focus();
+
+				
+
+			}else if(inputcount= ''){
+
+				alert('수량을 입력하세요')
+
+				$('#inputcount').focus();
+
+				
+
+			}else if(inputaddress =''){
+
+				alert('주소를 입력하세요') 
+
+				$('#inputaddress').focus();
+
+				
+
+			}else if(inputnumber=''){
+
+				alert('전화번호를 입력하세요')
+
+				$('#inputnumber').focus();
+
+				
+
+			}else {
+
+				alert('주문 완료')
+
+			}
+
+		}
+
+//열심히 이유를 찾으려 했지만 이름만 넣어도 주문완료라고 떠요ㅠㅠ 이유를 모르겠어요,,//
+
+</script>
+
+​
+
+</head>
+
+​
+
+<body>
+
+	​
+
+	<div class="picture"></div>
+
+	<div class="secondpart">
+
+		<span class="text-size"> 책 판매합니다. </span>
+
+		<span> 가격:천원/권 당</span> 
+
+		<p> 종류 : 소설, 시 , 희곡 , 에세이 ,여행 , 만화, 인문학, 사회과학, 역사 ,예술, 대중문화, 자기계발, 외국어, 경영경제, 컴퓨터</p>
+
+	</div>
+
+	​
+
+	<div class="lastpart">
+
+		<div class="input-group mb-3">
+
+			<div class="input-group-prepend">
+
+				<span class="input-group-text" id="inputGroup-sizing-default">주문자이름</span>
+
+			</div>
+
+			<input id="inputname" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+
+		</div>
+
+		<div class="input-group mb-3">
+
+			<div class="input-group-prepend">
+
+				<label class="input-group-text" for="inputGroupSelect01">수량</label>
+
+			</div>
+
+			<select class="custom-select" id="inputGroupSelect01" id="inputcount">
+
+				<option selected>수량을 선택하세요</option>
+
+				<option value="1">1</option>
+
+				<option value="2">2</option>
+
+				<option value="3">3</option>
+
+			</select>
+
+		</div>
+
+		​
+
+		<div class="input-group mb-3">
+
+			<div class="input-group-prepend">
+
+				<span class="input-group-text" id="inputGroup-sizing-default">주소</span>
+
+			</div>
+
+			<input id="inputaddress" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+
+		</div>
+
+		<div class="input-group mb-3">
+
+			<div class="input-group-prepend">
+
+				<span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+
+			</div>
+
+			<input id="inputnumber" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+
+		</div>
+
+	</div>
+
+	<button onclick="hey()" type="button" class="btn btn-primary" > 주문하기 </button>
+
+	​
+
+</div>
+
+</body>
+
+</html>
